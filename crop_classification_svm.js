@@ -1,6 +1,6 @@
 // The script below was developed by spareeth and colleagues and modified by
 // me during assignments of Remote sensing
-// This script does svm based crop type classification based on Sentinel 2 and Sentinel 1
+// This script does svm to classificafy crop types based on Sentinel 2 and Sentinel 1
 
 var mis = ee.FeatureCollection("users/spareeth/Module11/miandoab_scheme"),
     field = ee.FeatureCollection("users/spareeth/Module11/Groundtruth_2019"),
