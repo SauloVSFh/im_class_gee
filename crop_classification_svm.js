@@ -1,7 +1,12 @@
 // The script below was developed by spareeth and colleagues and modified by
 // me during assignments of Remote sensing
 // This script does svm based crop type classification based on Sentinel 2 and Sentinel 1
-// data from saulo
+
+var mis = ee.FeatureCollection("users/spareeth/Module11/miandoab_scheme"),
+    field = ee.FeatureCollection("users/spareeth/Module11/Groundtruth_2019"),
+    S1 = ee.ImageCollection("COPERNICUS/S1_GRD"),
+    S2 = ee.ImageCollection("COPERNICUS/S2_SR"),
+    L8 = ee.ImageCollection("LANDSAT/LC08/C02/T1_L2");
 
 print(field);
 Map.centerObject(mis, 10);
